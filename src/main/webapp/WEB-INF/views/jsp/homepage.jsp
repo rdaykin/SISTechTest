@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Recipe Book Homepage</title>
+<title>Football Team Homepage</title>
 
 <spring:url value="/resources/core/css/hello.css" var="coreCss" />
 <spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
@@ -14,28 +14,10 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Recipe Book</a>
+			<a class="navbar-brand" href="#">Football Team Webservice Homepage</a>
 		</div>
 	</div>
 </nav>
-
-<div class="jumbotron">
-	<div class="container">
-		<h1>${title}</h1>
-		<p>
-			<c:if test="${not empty msg}">
-				This is the homepage ${msg}
-			</c:if>
-
-			<c:if test="${empty msg}">
-				It worked! I am a genius!
-			</c:if>
-		</p>
-		<p>
-			<a class="btn btn-primary btn-lg" href="login" role="button">Log in</a>
-		</p>
-	</div>
-</div>
 
 <div class="container">
 
