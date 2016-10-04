@@ -1,7 +1,5 @@
 package com.rdaykin.sis.model.team.player;
 
-import com.rdaykin.sis.model.team.FootballTeam;
-
 /**
  * Created by Rob on 02/10/2016.
  */

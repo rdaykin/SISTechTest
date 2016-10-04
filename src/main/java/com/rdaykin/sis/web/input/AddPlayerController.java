@@ -1,6 +1,5 @@
 package com.rdaykin.sis.web.input;
 
-import com.rdaykin.sis.model.team.FootballTeam;
 import com.rdaykin.sis.model.team.player.TeamPlayer;
 import com.rdaykin.sis.services.TeamService;
 import org.apache.log4j.Logger;
@@ -10,8 +9,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.List;
 
 /**
  * Created by Rob on 02/10/2016.

@@ -1,9 +1,6 @@
 package com.rdaykin.sis.web.input;
 
-import java.util.Map;
-
 import com.rdaykin.sis.model.team.FootballTeam;
-import com.rdaykin.sis.model.team.player.TeamPlayer;
 import com.rdaykin.sis.services.TeamService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
