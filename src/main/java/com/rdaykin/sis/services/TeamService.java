@@ -4,6 +4,8 @@ import com.rdaykin.sis.model.team.FootballTeam;
 import com.rdaykin.sis.model.team.player.TeamPlayer;
 import org.apache.log4j.Logger;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -11,11 +13,14 @@ import java.util.*;
  */
 public class TeamService {
 
+    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    Calendar cal = Calendar.getInstance();
     private Map<String,FootballTeam> footballTeams = new HashMap<String,FootballTeam>();
     private final Logger logger = Logger.getLogger(TeamService.class);
 
     public boolean addNewTeam(FootballTeam team){
         if(!footballTeams.containsKey(team.getName())){
+            team.setDateCreated(dateFormat.format(cal.getTime()));
             footballTeams.put(team.getName(),team);
             logger.info("Created new team with name: "+team.getName());
             return true;

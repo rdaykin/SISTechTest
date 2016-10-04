@@ -1,5 +1,6 @@
 package com.rdaykin.sis.model.team;
 
+import java.util.Date;
 import java.util.Set;
 
 /**
@@ -12,6 +13,7 @@ public class FootballTeam {
     private String city;
     private Set<String> players;
     private String competition;
+    private String dateCreated;
 
     public String getName() {
         return name;
@@ -51,6 +53,14 @@ public class FootballTeam {
 
     public void setCompetition(String competition) {
         this.competition = competition;
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
     }
 
     @Override
